@@ -1,0 +1,9 @@
+<form class="new-comment" action="/comments" method="POST">
+  <div class="form-group">
+    <input type="textarea" id="text" name="text" placeholder="say something neat!" maxlength="400" wrap="hard" cols="5">
+  </div>
+  <input type="hidden" id="finstagram_post_id" name="finstagram_post_id" value="<%=finstagram_post.id%>">
+  <span class="form-group">
+    <button class="button add" type="submit">+</button>
+  </span>
+</form>

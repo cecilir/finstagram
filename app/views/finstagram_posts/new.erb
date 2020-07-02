@@ -1,0 +1,24 @@
+<h4>New Post</h4>
+
+<%if @new_post_error_message%>
+  <div class="errors">
+    <i> New post failed! </i>
+    <ul>
+      <% @finstagram_post.errors.full_messages.each do |message|%>
+        <li><%=message%></li>
+      <%end%>
+    </ul>
+  </div>
+<%end%>
+
+<form method="POST" action="/finstagram_posts">
+<div class="form-inputs">
+  <div class="form-group">
+    <label for="photo_url">Photo URL</label>
+    <input type="text" id="photo_url" name="photo_url">
+  </div>
+  <div class="form-group">
+    <button class="button submit" type="submit">Post</button>
+  </div>
+  </div>
+</form>

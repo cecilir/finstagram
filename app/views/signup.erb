@@ -1,0 +1,40 @@
+<h4>Join Finstagram!</h4>
+
+<%if @signup_error_message%>
+  <div class="errors"> 
+    <i> Signup failed! </i>
+      <ul>
+        <% @user.errors.full_messages.each do |message|%>
+          <li><%=message%></li>
+        <%end%>
+      </ul>
+  </div>
+<%end%>
+
+<form method="POST" action="/signup">
+  <div class="form-inputs">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" value="<%=@user.email%>">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="avatar_url">Avatar URL</label>
+      <input type="text" id="avatar_url" name="avatar_url" value="<%=@user.avatar_url%>">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" value="<%=@user.username%>">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <br>
+    <div class="form-group">
+      <button class="button submit" type="submit">Sign up</button>
+    </div>
+  </div>
+</form>

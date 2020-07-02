@@ -1,0 +1,254 @@
+header {
+    background-color:#2b216e;
+}
+
+/* headings: */
+h1, h1 a {
+  color:#5eff29;
+  font-family: 'Varela Round', sans-serif;
+  font-style: italic;
+  text-indent: 20%;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-weight:bold;
+}
+
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 3em;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 0.9rem;
+}
+
+/* stuff in the header */
+.login-info, .login-info a {
+    color:white;
+    text-align: right;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.login-info a {
+    border: 2px solid #5eff29;
+    border-radius: 20px;
+    padding: 2px 8px;
+    margin-left: 10px;
+}
+
+/* stuff in the main section */
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    padding: 0 1rem;
+    color:#2b216e;
+    width: 50%;
+}
+
+/* posts */
+.user-info {
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.user-info img, img.user-info {
+    border-radius: 100%;
+    box-shadow: 0 0 2px 0 grey;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5em 0 0;
+}
+
+.finstagram-post {
+    padding: 0 30px 1rem 30px;
+    background: white;
+    width: 100%;
+}
+
+.finstagram-post:first-of-type:first-of-type {
+    margin-top: 15px;
+}
+
+a.photo{
+    transition: padding 0.5s;
+}
+
+a.photo:hover{
+    padding:10px;
+    transition: padding 0.5s;
+}
+
+.comments {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.87em;
+    color: black
+}
+
+.comment-count {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
+.like-count {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
+/* forms - fields and buttons */
+.form-group {
+    font-size: 16pt;
+    text-align: left;
+    display: inline-block;
+}
+
+.button {
+    padding: 5px;
+    background: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #2b216e;
+    font-weight: bold;
+    color: #2b216e;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.button.submit {
+    transform: skewX(-15deg);
+    transition: background-color 0.3s;
+}
+
+.button.submit:hover, .button.submit:focus {
+    outline: none;
+    background: #5eff29;
+    transition: background-color 0.3s;
+}
+
+.button.new-post {
+    background: none;
+    width: 100%;
+    text-align: center;
+    margin: 15px 15px 0 0;
+    border-radius: 4px;
+    font-size: 24px;
+    box-shadow: 0 0 8px lightgrey;
+    border: 3px solid #2b216e;
+    padding: 3px;
+    transition: background-color 0.3s;
+}
+
+.button.new-post:hover, .button.new-post:focus {
+    border: 3px solid #5eff29;
+    background: #5eff29;
+    transition: background-color 0.3s;
+}
+
+.button.add {
+    width: 2rem;
+    padding: 0;
+    height: 2rem;
+}
+
+.button.like {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    width: auto;
+    height: 27px;
+}
+
+.button.like:hover, .button.like:focus {
+    border: none;
+    box-shadow: 0 0 1px 1px #5eff29;
+    outline: none;
+}
+
+.actions button.user-like {
+    /* color: #FF2600; */
+    /* border-color: #FF2600; */
+    background: #5eff29;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 400px;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid #2b216e;
+    border-radius: 20px;
+    background: none;
+}
+
+input[type=textarea] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    background: none;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 8px 0.5px whitesmoke;
+    padding: 3px;
+}
+
+.form-inputs {
+    display: block;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+.new-comment {
+    align-items: center;
+    display: inline-flex;
+}
+
+label {
+    font-weight: bold;
+    color: #2b216e;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset 0 0 2px 3px #5eff29;
+}
+
+/* error messages */
+.errors ul {
+    list-style-position: inside;
+    padding-left: 0;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.errors {
+    margin: 16px;
+    display: inherit;
+    background: rgba(43, 33, 110,.04);
+    color: #2b216e;
+    padding: 8px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+}

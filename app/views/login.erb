@@ -1,0 +1,25 @@
+<h4>Login to Finstagram</h4>
+
+<%if @login_error_message%>
+<div class="errors">
+   <i> <%=@login_error_message %> </i>
+</div>
+<%end%>
+
+<form method="POST" action="/login">
+  <div class="form-inputs">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <br>
+    <div class="form-group">
+      <button class="button submit" type="submit">Login</button>
+    </div>
+  </div>
+</form>

@@ -9,7 +9,7 @@ body, input {
 }
 
 a {
-  color: #8da7b8;
+  /* color: #8da7b8; */
   text-decoration: none;
 }
 
@@ -33,6 +33,7 @@ header {
 
 header > .login-info {
   margin-left: auto;
+  padding: 20px
 }
 
 main {
@@ -74,7 +75,7 @@ main {
 }
 
 .user-info h2 {
-  margin: 0 0 0 .5em;
+  /* margin: 0 0 0 .5em; */
 }
 
 .user-info h3 {
@@ -95,10 +96,10 @@ main {
   align-items: baseline;
 }
 
-.actions button.user-like {
+/* .actions button.user-like {
   color: #FF2600;
   border-color: #FF2600;
-}
+} */
 
 .actions .comment-count {
   margin-left: auto;
@@ -119,3 +120,4 @@ main {
 .new-comment input[type="text"] {
   width: 100%;
 }
+
