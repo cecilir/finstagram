@@ -20,12 +20,12 @@ class FinstagramPost < ActiveRecord::Base
     elsif time_ago_in_minutes <= 1
         "moments ago"
     else
-        "#{time_ago_in_minutes} minutes ago"
+        "#{time_ago_in_minutes.to_i} minutes ago"
     end
   end  
   
   def comment_count
-    self.comments.size
+    self.comments.size - 1
   end
 
   def like_count

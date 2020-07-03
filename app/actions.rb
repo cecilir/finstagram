@@ -65,6 +65,9 @@ post '/finstagram_posts' do
   @finstagram_post = FinstagramPost.new({photo_url: photo_url, user_id: current_user.id})
 
   if @finstagram_post.save
+    text = params[:caption]
+    comment = Comment.new({text:text, finstagram_post_id:@finstagram_post.id, user_id:current_user.id})
+    comment.save
     redirect(to('/'))
   else
     @new_post_error_message = true

@@ -51,6 +51,12 @@ p {
     margin-left: 10px;
 }
 
+.login-info a:hover, .login-info a:focus {
+    background: #5eff29;
+    border: 2px solid white;
+    color: #2b216e;
+}
+
 /* stuff in the main section */
 body {
     background-color: whitesmoke;
@@ -82,15 +88,19 @@ main {
     width: 100%;
 }
 
-.finstagram-post:first-of-type:first-of-type {
+.finstagram-post:first-of-type {
     margin-top: 15px;
 }
 
-a.photo{
+.finstagram-post:last-of-type {
+    margin-bottom: 15px;
+}
+
+a.photo.link{
     transition: padding 0.5s;
 }
 
-a.photo:hover{
+a.photo.link:hover{
     padding:10px;
     transition: padding 0.5s;
 }
@@ -118,6 +128,15 @@ a.photo:hover{
     font-size: 16pt;
     text-align: left;
     display: inline-block;
+}
+
+.new-comment div.form-group {
+    width: 95%;
+}
+
+.new-comment span.form-group {
+    width: 5%;
+    margin-left: 1rem;
 }
 
 .button {
@@ -157,15 +176,19 @@ a.photo:hover{
 }
 
 .button.new-post:hover, .button.new-post:focus {
-    border: 3px solid #5eff29;
     background: #5eff29;
     transition: background-color 0.3s;
 }
 
 .button.add {
-    width: 2rem;
+    width: 1.7rem;
     padding: 0;
-    height: 2rem;
+    height: 1.7rem;
+}
+
+.button.add:hover, button.add:focus {
+    outline: none;
+    background: whitesmoke;
 }
 
 .button.like {
@@ -203,13 +226,18 @@ input[type=text], input[type=password], input[type=email] {
 input[type=textarea] {
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
     border-radius: 3px;
     background: none;
     font-size: 0.9rem;
     font-family: 'Open Sans', sans-serif;
-    box-shadow: 0 0 8px 0.5px whitesmoke;
-    padding: 3px;
+    box-shadow: 0 0 3px 0.1px whitesmoke;
+    padding: 3px; 
+}
+
+input[type=textarea]:focus {
+    box-shadow: none;
+    border: 2px solid #2b216e;
 }
 
 .form-inputs {
@@ -222,6 +250,8 @@ input[type=textarea] {
 .new-comment {
     align-items: center;
     display: inline-flex;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 label {
