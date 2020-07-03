@@ -4,8 +4,9 @@
       <h2><%= finstagram_post.user.username %></h2>
       <h3><%= finstagram_post.humanized_time_ago %></h3>
   </div>
-  <a class="photo link" href="/finstagram_posts/<%= finstagram_post.id %>"> 
+  <a class="photo link tooltip" href="/finstagram_posts/<%= finstagram_post.id %>"> 
     <img src="<%= finstagram_post.photo_url %>" alt="finstagram post from <%= finstagram_post[:username] %>">
+    <span class="tooltiptext">Click to view post and make a comment</span>
   </a>
   <div class="actions">
     <%= erb(:"shared/likes", {locals:{finstagram_post: finstagram_post}})%>
