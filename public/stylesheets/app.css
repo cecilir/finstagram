@@ -141,16 +141,29 @@ a.photo.link:hover{
     transition: padding 0.5s;
 }
 
+.comment-count {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
 .comments {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.87em;
     color: black
 }
 
-.comment-count {
-    background: whitesmoke;
-    border-radius: 20px;
-    padding: 4px 8px;
+.comments li {
+    margin-bottom: 0.5rem;
+}
+
+.comments li:first-of-type {
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 1rem;
+}
+
+.comments li:last-of-type {
+    margin-bottom: 0;
 }
 
 .like-count {
@@ -319,6 +332,7 @@ input:focus {
     font-size: 10pt;
 }
 
+/* tooltip on photos */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -345,15 +359,3 @@ input:focus {
   opacity: 0.75;
 }
 
-.comments li {
-    margin-bottom: 0.5rem;
-}
-
-.comments li:first-of-type {
-    border-bottom: 1px solid whitesmoke;
-    padding-bottom: 1rem;
-}
-
-.comments li:last-of-type {
-    margin-bottom: 0;
-}
