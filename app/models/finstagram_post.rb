@@ -25,7 +25,7 @@ class FinstagramPost < ActiveRecord::Base
   end  
   
   def comment_count
-    self.comments.size - 1
+    self.comments.size
   end
 
   def like_count

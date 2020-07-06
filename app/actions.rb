@@ -75,6 +75,8 @@ post '/finstagram_posts' do
   end
 end
 
+
+
 get '/finstagram_posts/:id' do
   @finstagram_post = FinstagramPost.find(params[:id])
   erb(:"finstagram_posts/show")
@@ -105,3 +107,7 @@ delete '/likes/:id' do
   like.destroy
   redirect(back)
 end
+
+
+
+
