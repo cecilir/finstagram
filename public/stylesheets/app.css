@@ -235,6 +235,10 @@ a.photo.link:hover{
     background: #5eff29;
 }
 
+body input {
+    color: black;
+}
+
 input[type=text], input[type=password], input[type=email] {
     width: 400px;
     box-sizing: border-box;
